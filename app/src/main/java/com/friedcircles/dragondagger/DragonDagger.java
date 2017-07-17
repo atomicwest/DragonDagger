@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 public class DragonDagger extends AppCompatActivity {
 
+    MediaPlayer switchsound;
+
     MediaPlayer note1;
     MediaPlayer note2;
     MediaPlayer note3;
@@ -26,6 +28,8 @@ public class DragonDagger extends AppCompatActivity {
 
         changeSet = Boolean.FALSE;
 
+        switchsound = MediaPlayer.create(this, R.raw.switchsounds);
+
         note1 = MediaPlayer.create(this, R.raw.lightsaberon2);
         note2 = MediaPlayer.create(this, R.raw.hit1);
         note3 = MediaPlayer.create(this, R.raw.hit2);
@@ -34,9 +38,9 @@ public class DragonDagger extends AppCompatActivity {
         note2Aux = MediaPlayer.create(this, R.raw.concuss1);
         note3Aux = MediaPlayer.create(this, R.raw.concuss5);
 
-    // Example of a call to a native method
-    //TextView tv = (TextView) findViewById(R.id.sample_text);
-    //tv.setText(stringFromJNI());
+        // Example of a call to a native method
+        //TextView tv = (TextView) findViewById(R.id.sample_text);
+        //tv.setText(stringFromJNI());
     }
 
     public void playnote1(View view){
@@ -66,6 +70,9 @@ public class DragonDagger extends AppCompatActivity {
 
 
     public void switchSound(View view){
+
+        switchsound.start();
+
         if(changeSet){
             changeSet = Boolean.FALSE;
         }   else {
