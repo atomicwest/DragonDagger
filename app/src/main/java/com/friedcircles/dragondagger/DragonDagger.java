@@ -4,6 +4,7 @@ import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 
@@ -14,6 +15,7 @@ public class DragonDagger extends AppCompatActivity {
     MediaPlayer note1;
     MediaPlayer note2;
     MediaPlayer note3;
+    MediaPlayer note4;
 
     MediaPlayer note1Aux;
     MediaPlayer note2Aux;
@@ -26,22 +28,35 @@ public class DragonDagger extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dragon_dagger);
 
+
         changeSet = Boolean.FALSE;
 
         switchsound = MediaPlayer.create(this, R.raw.switchsounds);
 
-        note1 = MediaPlayer.create(this, R.raw.lightsaberon2);
-        note2 = MediaPlayer.create(this, R.raw.hit1);
-        note3 = MediaPlayer.create(this, R.raw.hit2);
+        note1 = MediaPlayer.create(this, R.raw.g);
+        note2 = MediaPlayer.create(this, R.raw.f);
+        note3 = MediaPlayer.create(this, R.raw.d);
+        note4 = MediaPlayer.create(this, R.raw.a);
 
-        note1Aux = MediaPlayer.create(this, R.raw.bcfire02);
-        note2Aux = MediaPlayer.create(this, R.raw.concuss1);
-        note3Aux = MediaPlayer.create(this, R.raw.concuss5);
+        note1Aux = MediaPlayer.create(this, R.raw.ac);
+        note2Aux = MediaPlayer.create(this, R.raw.gbb);
+        note3Aux = MediaPlayer.create(this, R.raw.fa);
 
         // Example of a call to a native method
         //TextView tv = (TextView) findViewById(R.id.sample_text);
         //tv.setText(stringFromJNI());
     }
+
+
+    /*
+    @Override
+    public boolean onTouch(View v, MotionEvent ev){
+        if(event.getAction()==MotionEvent.ACTION_DOWN{
+        }
+
+    }
+     */
+
 
     public void playnote1(View view){
         if(changeSet){

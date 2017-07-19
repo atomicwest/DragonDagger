@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <bitmap android:src="@drawable/background_360x640_dim_bright" />
+    </item>
+    <item>
+        <bitmap android:src="@drawable/dragondagger_top_zoom_nobuttons_360x640" />
+    </item>
+</layer-list>
