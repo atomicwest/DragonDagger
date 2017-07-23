@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
     tools:context="com.friedcircles.dragondagger.HelpScreen"
-    android:background="@drawable/help_screen_melody1a_360x640"
+    android:background="@drawable/help_screen_melody1_seq_360x640"
     tools:layout_editor_absoluteY="25dp"
     tools:layout_editor_absoluteX="0dp">
 

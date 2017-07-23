@@ -2,6 +2,8 @@
 
 Android soundboard app using sounds from the MMPR series.
 
+Free on Google Play: goo.gl/EgtPaF
+
 * Play notes by pressing buttons on the hilt
 * Able to play the following notes in ascending order: D, F, G, A
 * Switch note/button mapping by pressing the center power coin
